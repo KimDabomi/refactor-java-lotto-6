@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lotto.model.WinningLottoTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2023-11-15T08:08:26" hostname="gimdabomiui-MacBookAir.local" time="0.056">
+  <properties/>
+  <testcase name="이벤트 유형: 6, 예상결과: BONUS_NUMBER_DUPLICATE_ERROR_MESSAGE" classname="lotto.model.WinningLottoTest" time="0.037"/>
+  <testcase name="이벤트 유형: -6, 예상결과: BONUS_NUMBER_NEGATIVE_ERROR_MESSAGE" classname="lotto.model.WinningLottoTest" time="0.001"/>
+  <testcase name="이벤트 유형: 46, 예상결과: BONUS_NUMBER_RANGE_ERROR_MESSAGE" classname="lotto.model.WinningLottoTest" time="0.001"/>
+  <testcase name="이벤트 유형: abc, 예상결과: BONUS_NUMBER_TYPE_ERROR_MESSAGE" classname="lotto.model.WinningLottoTest" time="0.001"/>
+  <testcase name="이벤트 유형: [1, 2, 3, 4, 5, 6], 예상결과: FIRST" classname="lotto.model.WinningLottoTest" time="0.001"/>
+  <testcase name="이벤트 유형: [1, 2, 3, 4, 5, 7], 예상결과: SECOND" classname="lotto.model.WinningLottoTest" time="0.001"/>
+  <testcase name="이벤트 유형: [1, 2, 3, 4, 5, 8], 예상결과: THIRD" classname="lotto.model.WinningLottoTest" time="0.001"/>
+  <testcase name="이벤트 유형: [1, 2, 3, 4, 8, 9], 예상결과: FOURTH" classname="lotto.model.WinningLottoTest" time="0.0"/>
+  <testcase name="이벤트 유형: [1, 2, 3, 8, 9, 10], 예상결과: FIFTH" classname="lotto.model.WinningLottoTest" time="0.0"/>
+  <testcase name="이벤트 유형: [1, 2, 8, 9, 10, 11], 예상결과: NONE" classname="lotto.model.WinningLottoTest" time="0.001"/>
+  <testcase name="이벤트 유형: [1, 12, 8, 9, 10, 11], 예상결과: NONE" classname="lotto.model.WinningLottoTest" time="0.0"/>
+  <testcase name="이벤트 유형: [13, 12, 8, 9, 10, 11], 예상결과: NONE" classname="lotto.model.WinningLottoTest" time="0.0"/>
+  <testcase name="보너스 번호 입력 확인" classname="lotto.model.WinningLottoTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
