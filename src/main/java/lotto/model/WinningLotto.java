@@ -9,7 +9,7 @@ public class WinningLotto {
     private final String userBonusNumber;
 
     public WinningLotto(Lotto winningLotto, String userBonusNumber) {
-        int bonusNumber = isValidBonusNumber(userBonusNumber, winningLotto.getNumbers());
+        int bonusNumber = checkValidBonusNumber(userBonusNumber, winningLotto.getNumbers());
         this.userBonusNumber = String.valueOf(bonusNumber);
         this.winningLotto = winningLotto;
     }
@@ -20,7 +20,7 @@ public class WinningLotto {
         return determinePrize(matchCount, bonusMatch);
     }
 
-    public int isValidBonusNumber(String userBonusNumber, List<Integer> winningNumbers) {
+    public int checkValidBonusNumber(String userBonusNumber, List<Integer> winningNumbers) {
         int bonusNumber = getBonusIntegerNumber(userBonusNumber);
         WinningLottoException.checkBonusNumberIntegerExceptions(winningNumbers, bonusNumber);
         return bonusNumber;

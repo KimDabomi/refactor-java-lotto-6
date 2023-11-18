@@ -65,7 +65,7 @@ class WinningLottoTest {
             userLotto.add(i);
         }
         String userBonusNumber = "7";
-        int bonusNumber = winningLottoTest.isValidBonusNumber(userBonusNumber, userLotto);
+        int bonusNumber = winningLottoTest.checkValidBonusNumber(userBonusNumber, userLotto);
         assertThat(bonusNumber).isEqualTo(7);
     }
 
@@ -77,7 +77,7 @@ class WinningLottoTest {
         for (int i = 1; i < 7; i++) {
             winningLotto.add(i);
         }
-        assertThatThrownBy(() -> winningLottoTest.isValidBonusNumber(userBonusNumber, winningLotto))
+        assertThatThrownBy(() -> winningLottoTest.checkValidBonusNumber(userBonusNumber, winningLotto))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining(errorMessage.getErrorMessage());
     }
